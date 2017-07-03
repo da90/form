@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Better Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <p><h2>Organisation Management</h2></p>
+    <hr/>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <form class="form-group" action="index.html" method="post">
+          <div class="container bg-primary text-white">
+            <label for="organisation"><h5>Select an organisation.</h5></label>
+          </div>
+          <select class="form-control" name="" id="organisation">
+            <option value="">Test Organisation</option>
+          </select>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary mt-2">Add</button>
+            <button type="button" class="btn btn-primary mt-2">Select</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="container bg-primary text-white">
+            <label for="team"><h5>Select a team.</h5></label>
+          </div>
+          <input type="text" class="form-control" placeholder="Enter team name here."></input>
+          <button type="button" class="btn btn-primary mt-2">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-2 flex-last">
+        <div class="container bg-primary text-white pb-1">
+          <h5>Unassigned.</h5>
+        </div>
+          <div class="card mt-2">
+            <div class="card-block">
+              <div class="card-title lead">Unassigned</div>
+              <div class="card-text">Is Manager? <input type="checkbox"></input></div>
+            </div>
+
+          <div class="card-block">
+            <div class="card-title lead">A Smith</div>
+            <div class="card-text">Is Manager? <input type="checkbox"></input></div>
+          </div>
+
+        <div class="card-block">
+          <div class="card-title lead">Organisation manager</div>
+          <div class="card-text">Is Manager? <input type="checkbox"></input></div>
+        </div>
+          </div>
+      </div>
+
+      <div class="col-md-10 flex-first">
+        <div class="row">
+        <div class="container bg-primary text-white pb-1">
+          <h5>Team list.</h5>
+        </div>
+
+        <div class="col-md-3 mt-2">
+          <div class="container-fluid bg-primary text-white">
+            <h5>Team filters.</h5>
+          </div>
+            <div class="card">
+              <div class="card-block">
+                <div class="card-title">Filter by user</div>
+                <select class="form-control" name="" placeholder="Search users">
+                  <option>user 1</option>
+                </select>
+                <hr/>
+
+                <div class="card-title">Filter by team</div>
+                <select class="form-control" name="" placeholder="Search users">
+                  <option>team 1</option>
+                </select>
+                <hr/>
+
+                <button type="button" class="btn btn-primary mt-2">Filter</button>
+              </div>
+
+            </div>
+        </div>
+        <div class="col-md-3 mt-2">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title bg-inverse text-white">Team 1</h4>
+              <p class="card-text"><h5>Team manager</h5></p>
+              <p>Is Manager? <input type="checkbox"></input><span class="text-primary ml-2">X</span></p>
+              <hr/>
+              <p class="card-text"><h5>Team member</h5></p>
+              <p>Is Manager? <input type="checkbox"></input><span class="text-primary ml-2">X</span></p>
+              <hr/>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-2">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title bg-inverse text-white">Team 2</h4>
+              <p class="card-text"><h5>Team manager</h5></p>
+              <p>Is Manager? <input type="checkbox"></input><span class="text-primary ml-2">X</span></p>
+              <hr/>
+              <p class="card-text"><h5>Team member</h5></p>
+              <p>Is Manager? <input type="checkbox"></input><span class="text-primary ml-2">X</span></p>
+              <hr/>
+              <p class="card-text"><h5>Team member</h5></p>
+              <p>Is Manager? <input type="checkbox"></input><span class="text-primary ml-2">X</span></p>
+              <hr/>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-2">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title bg-inverse text-white">Team 3</h4>
+              <p class="card-text"><h5>Team manager</h5></p>
+              <p>Is Manager? <input type="checkbox"></input><span class="text-primary ml-2">X</span></p>
+              <hr/>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
